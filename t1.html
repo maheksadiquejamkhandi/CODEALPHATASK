@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="t1.css" />
+  </head>
+  <body>
+    <section class="slider-container">
+      <div class="slider-images">
+        <div class="slider-img">
+          <img src="img03.jpg" alt="1" />
+          <h1>garden</h1>
+          <div class="details">
+            <h2>garden</h2>
+            <p>web3 Developer</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="img20.jpg" alt="2" />
+          <h1>cake</h1>
+          <div class="details">
+            <h2>cake</h2>
+            
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="img01.jpg" alt="3" />
+          <h1>home</h1>
+          <div class="details">
+            <h2>home</h2>
+           
+          </div>
+        </div>
+        <div class="slider-img active">
+          <img src="img0.jpg" alt="4" />
+          <h1>nature</h1>
+          <div class="details">
+            <h2>nature</h2>
+           
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="img02.jpg" alt="5" />
+          <h1>bird</h1>
+          <div class="details">
+            <h2>bird</h2>
+           
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="img05.jpg" alt="6" />
+          <h1>hotel</h1>
+          <div class="details">
+            <h2>hotel</h2>
+            
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="images.jpg" alt="7" />
+          <h1>nature</h1>
+          <div class="details">
+            <h2>nature</h2>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="t1.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
